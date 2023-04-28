@@ -1,7 +1,7 @@
 package tests;
 
 import io.restassured.http.ContentType;
-import models.users.PostJsonHandler;
+import models.PostJsonHandler;
 import org.junit.jupiter.api.Test;
 import configuration.BaseTest;
 
