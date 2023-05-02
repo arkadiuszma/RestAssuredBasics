@@ -9,9 +9,9 @@ import static io.restassured.RestAssured.given;
 public class DeletePostTest extends BaseTest {
     @ParameterizedTest
     @CsvSource({"1"})
-    public void shouldDeleteFirstUser(String id) {
-        given()
-                .pathParams("id", id).
+    public void shouldDeleteUserById(String id) {
+        given().
+                pathParams("id", id).
         when().
                 delete(POSTS + "/{id}").
         then().

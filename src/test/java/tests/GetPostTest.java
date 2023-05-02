@@ -44,7 +44,7 @@ public class GetPostTest extends BaseTest {
     }
     @ParameterizedTest
     @CsvSource({"3, 21"})
-    public void shouldGetUserPostsById(String userId, String minUserPostId) {
+    public void shouldGetPostsByUserId(String userId, String minUserPostId) {
         jsonPath =
         given()
                 .pathParams("id", userId).

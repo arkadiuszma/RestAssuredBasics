@@ -11,7 +11,7 @@ import static io.restassured.RestAssured.given;
 public class PutPostTest extends BaseTest {
     @ParameterizedTest
     @CsvSource("1")
-    public void shouldOverrideUser(String id) {
+    public void shouldOverrideUserById(String id) {
         given()
                 .contentType(ContentType.JSON)
                 .body(new PostJsonHandler().getPostFromFile()).
